@@ -1,16 +1,8 @@
 import './app.css'
-import { useRef, useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 function App() {
-const myRef = useRef()
-const [visibleElement, setVisibleElement] = useState()
-console.log(visibleElement)
-useEffect(() => {
-  const observer = new IntersectionObserver((ent) => {
-    const e = ent[0]
-    setVisibleElement(e.isIntersecting)
-  })
-  observer.observe(myRef.current)
-}, [])
+  const { ref, inView} = useInView()
+  const { excepRef, excepRefInView} = useInView()
   return (
     <div className="bg-gray-200 font-main">
       <div className="h-screen w-screen flex flex-col bg-[url('https://unpretentiouspalate.com/wp-content/uploads/2023/08/dumpling-lady-wide.jpg')] z-10 bg-zinc-900" id="firstDiv">
@@ -82,7 +74,7 @@ useEffect(() => {
         <section className="flex h-3/5 place-items-center">
           <div className="w-2/5 h-3/5 pl-24 py-16 space-y-1">
             <h1 className="font-bold font-mono text-3xl w-fit" id="highlight">Chengdu style</h1>
-            <p className="leading-7 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aut corrupti consectetur cupiditate ea magnam?</p>
+            <p className='leading-7 text-lg'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aut corrupti consectetur cupiditate Lorem ipsum dolor sit, amet consectetur.</p>
             <a href="" className=" text-lg w-fit tracking-wide bg-yellow-400 rounded-lg py-1 px-2 text-slate-900 transition-all duration-200 hover:bg-yellow-500" id="btn-4">Learn More</a>
           </div>
           <div className="w-3/5 h-full self-end flex place-content-center py-16 transition-all duration-200 hover:rotate-6 hover:scale-105">
@@ -97,8 +89,8 @@ useEffect(() => {
             <img className="h-3/5 rounded-lg" src="https://www.charlottemagazine.com/content/uploads/data-import/23abcd30/082016dumplingladycltmag0223.jpg" alt="" />
           </div>
           <div className="w-2/5 h-full flex flex-col place-content-center self-end text-gray-200">
-            <h1 className="font-bold font-mono text-3xl w-fit transition-all duration-200" ref={myRef}>Exceptional Service</h1>
-            <p className="leading-7 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda, sunt incidunt vel est amet quis. Voluptates.</p>
+            <h1 className="font-bold font-mono text-3xl w-fit transition-all duration-200">Exceptional Service</h1>
+            <p className='leading-7 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda, sunt incidunt vel est amet quis. Voluptates.</p>
             <a className="text-lg w-fit tracking-wide bg-yellow-400 rounded-lg py-1 px-2 text-slate-900 transition-all duration-200 hover:bg-yellow-500" href="">Learn More</a>
           </div>
         </div>
