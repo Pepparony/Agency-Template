@@ -1,0 +1,42 @@
+#underline {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  #underline:hover {
+    color: #000;
+  }
+  
+  #underline::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+  }
+  
+  #underline:hover::before {
+    transform: scaleX(1);
+  }
+
+  #firstDiv {
+    clip-path: ellipse(100% 70% at 81% 37%);
+  }
+
+  #secondDiv {
+    clip-path: ellipse(143% 71% at 90% 66%);
+  }
+
+  #highlight {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fcd34d);
+  }
+
+  #secondSectionDiv {
+    clip-path: ellipse(82% 73% at 25% 50%);
+  }
