@@ -1,42 +1,200 @@
 #underline {
-    position: relative;
-    text-decoration: none;
-  }
-  
-  #underline:hover {
-    color: #000;
-  }
-  
-  #underline::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    transform: scaleX(0);
-    transform-origin: top left;
-    transition: transform 0.3s ease;
-  }
-  
-  #underline:hover::before {
-    transform: scaleX(1);
+  position: relative;
+  text-decoration: none;
+}
+
+#underline:hover {
+  color: #000;
+}
+
+#underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+#underline:hover::before {
+  transform: scaleX(1);
+}
+
+#firstDiv {
+  clip-path: ellipse(100% 70% at 81% 37%);
+}
+
+#secondDiv {
+  clip-path: ellipse(143% 71% at 90% 66%);
+}
+
+#secondSectionDiv {
+  clip-path: ellipse(82% 73% at 25% 50%);
+}
+
+
+.chengduHighlight {
+  transition: all;
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, ;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
+  font-size: 1.875rem
+    /* 30px */
+  ;
+  line-height: 2.25rem
+    /* 36px */
+  ;
+  width: fit-content;
+
+  animation-name: chengduHighlightAnimation;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+}
+
+@keyframes chengduHighlightAnimation {
+  0% {
+    background: linear-gradient(200deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   }
 
-  #firstDiv {
-    clip-path: ellipse(100% 70% at 81% 37%);
+  25% {
+    background: linear-gradient(195deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   }
 
-  #secondDiv {
-    clip-path: ellipse(143% 71% at 90% 66%);
+  50% {
+    background: linear-gradient(190deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   }
 
-  #highlight {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fcd34d);
+  75% {
+    background: linear-gradient(185deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   }
 
-  #secondSectionDiv {
-    clip-path: ellipse(82% 73% at 25% 50%);
+  100% {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   }
+}
+
+.exceptionialService {
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, ;
+  font-size: 1.875rem
+    /* 30px */
+  ;
+  line-height: 2.25rem
+    /* 36px */
+  ;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+  width: fit-content;
+
+  transition-property: all;
+  animation-name: secondHeaderAnimation;
+  animation-duration: 500ms;
+}
+
+@keyframes secondHeaderAnimation {
+  0% {
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+  }
+
+  25% {
+    background: linear-gradient(172deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+  }
+
+  50% {
+    background: linear-gradient(175deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+  }
+
+  75% {
+    background: linear-gradient(178deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+  }
+
+  100% {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+}
+}
+
+.exceptionialServiceParagraph {
+  line-height: 1.75rem/* 28px */;
+  font-size: 1.125rem/* 18px */;
+
+  animation-name: secondHeaderParagraph;
+  transition: all;
+  animation-duration: 3000ms;
+  animation-timing-function: ease-in;
+}
+
+@keyframes secondHeaderParagraph {
+  0% {
+    opacity: 0;
+    transform: translateX(250);
+  }
+
+  25% {
+    opacity: 25;
+  }
+
+  50% {
+    opacity: 50;
+  }
+
+  75% {
+    opacity: 75;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+
+.giveAnimation {
+  transition: all;
+  font-size: 18px;
+
+  animation-name: theAnimation;
+  animation-duration: 3000ms;
+  animation-timing-function: ease-in;
+}
+
+
+@keyframes theAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 25;
+  }
+
+  50% {
+    opacity: 50;
+  }
+
+  75% {
+    opacity: 75;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+.spinning {
+  animation-name:spinningAnimation;
+  animation-duration: 10000ms;
+  animation-iteration-count: 1;
+  border-radius:100%;
+}
+
+@keyframes spinningAnimation {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
