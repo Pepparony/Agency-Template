@@ -4,7 +4,7 @@
 }
 
 #underline:hover {
-  color: #000;
+  color: #f3f4f6;
 }
 
 #underline::before {
@@ -15,7 +15,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #f3f4f6;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
@@ -43,7 +43,7 @@
   font-weight: 700;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, ;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
-  font-size: 1.875rem
+  font-size: 3rem
     /* 30px */
   ;
   line-height: 2.25rem
@@ -81,13 +81,11 @@
 .exceptionialService {
   font-weight: 700;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, ;
-  font-size: 1.875rem
-    /* 30px */
-  ;
+  font-size: 3rem;
   line-height: 2.25rem
     /* 36px */
   ;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   width: fit-content;
 
   transition-property: all;
@@ -97,29 +95,31 @@
 
 @keyframes secondHeaderAnimation {
   0% {
-    background: linear-gradient(170deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   }
 
   25% {
-    background: linear-gradient(172deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+    background: linear-gradient(172deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   }
 
   50% {
-    background: linear-gradient(175deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+    background: linear-gradient(175deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   }
 
   75% {
-    background: linear-gradient(178deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
+    background: linear-gradient(178deg, rgba(255, 255, 255, 0) 50%, #fcd34d);
   }
 
   100% {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #fcd34d);
-}
+  }
 }
 
 .exceptionialServiceParagraph {
-  line-height: 1.75rem/* 28px */;
-  font-size: 1.125rem/* 18px */;
+  line-height: 1.75rem
+    /* 28px */
+  ;
+  font-size: 20px;
 
   animation-name: secondHeaderParagraph;
   transition: all;
@@ -153,7 +153,7 @@
 
 .giveAnimation {
   transition: all;
-  font-size: 18px;
+  font-size: 20px;
 
   animation-name: theAnimation;
   animation-duration: 3000ms;
@@ -184,17 +184,22 @@
 }
 
 .spinning {
-  animation-name:spinningAnimation;
+  height: 50%;
+  place-self: center;;
+  transition: all;
+  transition-duration: 400ms;
+  animation-name: spinningAnimation;
   animation-duration: 10000ms;
   animation-iteration-count: 1;
-  border-radius:100%;
+  border-radius: 100%;
 }
 
 @keyframes spinningAnimation {
-  0%{
+  0% {
     rotate: 0deg;
   }
-  100%{
+
+  100% {
     rotate: 360deg;
   }
 }
