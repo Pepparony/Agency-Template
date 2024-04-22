@@ -184,7 +184,7 @@
 }
 
 .spinning {
-  height: 50%;
+  height: 85%;
   place-self: center;;
   transition: all;
   transition-duration: 400ms;

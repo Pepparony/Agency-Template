@@ -70,14 +70,14 @@ function App() {
       </section>
       <section className="h-screen w-screen flex" id="cutIt">
         <div className="flex flex-col w-1/2 place-items-center justify-center space-y-12 text-zinc-900">
-          <span className="text-3xl">Sourced as locally as possible</span>
-          <span className="text-3xl">All food made in house daily</span>
-          <span className="text-3xl">Vegetarian and vegan options for all</span>
-          <span className="text-3xl">Fresh, seasoned and read to eat</span>
-          <span className="text-3xl">Hand crafted flour based noodles</span>
+          <span className="text-4xl font-semibold">Sourced as locally as possible</span>
+          <span className="text-4xl font-semibold">All food made in house daily</span>
+          <span className="text-4xl font-semibold">Vegetarian and vegan options for all</span>
+          <span className="text-4xl font-semibold">Fresh, seasoned and read to eat</span>
+          <span className="text-4xl font-semibold">Hand crafted flour based noodles</span>
         </div>
         <div className="w-1/2 flex justify-center">
-          <img ref={spinRef} className={`${spinInView ? 'spinning' : 'h-[1%] w-[1%]'}`} src="https://images.squarespace-cdn.com/content/v1/65249ed59b4bc017deda558c/57ef9945-94b5-4478-85d0-fb545407c897/F875EAE4-40B4-46E7-A930-648DADC59BFF.jpeg?format=300w" alt="" />
+          <img ref={spinRef} className={`${spinInView ? 'spinning' : 'h-[1%] w-[1%]'}`} src="./dist/assets/bowlnobackground.png" alt="" />
         </div>
       </section>
       <section className="h-screen w-screen bg-zinc-900 flex">
