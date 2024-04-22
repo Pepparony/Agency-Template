@@ -44,13 +44,13 @@ function App() {
         </div>
       </div>
       <div className="bg-gray-200 flex-col justify-center h-screen" id="secondDiv">
-        <section className="flex h-3/5 place-items-center">
+        <section className="flex h-full place-items-center">
           <div className="w-2/5 h-3/5 pl-24 py-16 flex flex-col space-y-5">
             <h1 ref={highlightRef} className={`${highlightInView ? 'chengduHighlight' : 'text-5xl'}`} id="highlight">Chengdu style</h1>
             <p ref={ref} className={`${inView ? 'giveAnimation' : 'text-xl'}`}>One of our most popular dishes. Handcrafted, and steamed to perfection, served with our iconic soy reduction sauce. A Sichuan classic that you're sure to enjoy</p>
             <a href="" className="w-fit focus:outline-none text-zinc-900 bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900" id="btn-4">Order Now</a>
           </div>
-          <div className="w-3/5 h-full self-end flex place-content-center py-16 transition-all duration-200">
+          <div className="w-3/5 h-[66%] self-center flex place-content-center py-16 transition-all duration-200">
             <img ref={rotateRef} id="firstImage" className={`${rotateInView ? 'rotate-6 rounded-lg transition-all duration-1000' : 'rounded-lg'}`} src="https://www.offtheeatenpathblog.com/wp-content/uploads/2018/10/the-dumpling-lady-dumplings.jpg" alt="" />
           </div>
         </section>
