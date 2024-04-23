@@ -2,7 +2,7 @@ import './app.css'
 import { useInView } from 'react-intersection-observer';
 import logo from '/frontend/assests/TheDumplingLadyLogo.png'
 import { useEffect } from 'react';
-import bowl from '/frontend/assests/bowlnobackground.png'
+import bowl from '/dist/assets/bowlnobackground.png'
 function App() {
   const { ref: ref, inView } = useInView()
   const { ref: rotateRef, inView: rotateInView } = useInView()
