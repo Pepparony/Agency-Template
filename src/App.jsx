@@ -2,6 +2,7 @@ import './app.css'
 import { useInView } from 'react-intersection-observer';
 import logo from '/frontend/assests/TheDumplingLadyLogo.png'
 import { useEffect } from 'react';
+import bowl from '/frontend/assests/bowlnobackground.png'
 function App() {
   const { ref: ref, inView } = useInView()
   const { ref: rotateRef, inView: rotateInView } = useInView()
@@ -77,7 +78,7 @@ function App() {
           <span className="text-4xl font-semibold">Hand crafted flour based noodles</span>
         </div>
         <div className="w-1/2 flex justify-center">
-          <img ref={spinRef} className={`${spinInView ? 'spinning' : 'h-[1%] w-[1%]'}`} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_n4U7y_OAWI1rWTojGXy-dihXfzeH-FhFR0A73kKwNA&s" alt="" />
+          <img ref={spinRef} className={`${spinInView ? 'spinning' : 'h-[1%] w-[1%]'}`} src={bowl} alt="" />
         </div>
       </section>
       <section className="h-screen w-screen bg-zinc-900 flex">
