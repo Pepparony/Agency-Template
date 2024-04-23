@@ -78,7 +78,7 @@ function App() {
           <span className="text-4xl font-semibold">Hand crafted flour based noodles</span>
         </div>
         <div className="w-1/2 flex justify-center">
-          <img ref={spinRef} className={`${spinInView ? 'spinning' : 'h-[1%] w-[1%]'}`} src={bowl} alt="" />
+          <img ref={spinRef} className={`${spinInView ? 'spinning' : 'h-[1%] w-[1%]'}`} src="https://fastly.4sqi.net/img/general/600x600/2809933_T0UcnEHIsjS_lRkK7FMnjbUiWZkL6cKS5i9z50NZHs0.jpg" alt="" />
         </div>
       </section>
       <section className="h-screen w-screen bg-zinc-900 flex">
