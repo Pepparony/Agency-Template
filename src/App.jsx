@@ -84,7 +84,7 @@ function App() {
         <div className="w-1/2 flex flex-col justify-center place-items-end">
           <div className="flex flex-col pl-24 space-y-10">
             <h3 className="text-5xl text-gray-100">Our Journey</h3>
-            <p className="text-xl text-gray-100">From the recipe books in China, to three locations, the dumpling lady has gone from idea, to food truck, to restaurants, whilst pleasing thousands of customers along the way.</p>
+            <p className="text-xl text-gray-100">From the recipe books in China, to three locations, the dumpling lady has gone from idea, to food truck, to restaurants, whilst pleasing thousands of customers along the way</p>
             <a href="" className="w-fit focus:outline-none text-zinc-900 bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900" id="btn-4">Learn More</a>
           </div>
         </div>
